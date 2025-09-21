@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - Trading P&L Calendar</title>
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <div class="auth-container" id="auth-container">
+        <!-- Login Form -->
+        <div class="auth-form-container" id="login-form">
+            <div class="auth-header">
+                <h1>Welcome Back</h1>
+                <p>Sign in to access your trading calendar</p>
+            </div>
+            
+            <form class="auth-form" id="login-form-element">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email</label>
+                    <input type="email" class="form-input" id="login-email" placeholder="Enter your email" required>
+                    <div class="form-error" id="login-email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="login-password">Password</label>
+                    <input type="password" class="form-input" id="login-password" placeholder="Enter your password" required>
+                    <div class="form-error" id="login-password-error"></div>
+                </div>
+                
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>Don't have an account?</p>
+                <button type="button" class="auth-switch" id="switch-to-signup">Sign Up</button>
+            </div>
+        </div>
+        
+        <!-- Sign Up Form -->
+        <div class="auth-form-container hidden" id="signup-form">
+            <div class="auth-header">
+                <h1>Create Account</h1>
+                <p>Sign up to start using the trading calendar</p>
+            </div>
+            
+            <form class="auth-form" id="signup-form-element">
+                <div class="form-group">
+                    <label class="form-label" for="signup-name">Full Name</label>
+                    <input type="text" class="form-input" id="signup-name" placeholder="Enter your full name" required>
+                    <div class="form-error" id="signup-name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="signup-email">Email</label>
+                    <input type="email" class="form-input" id="signup-email" placeholder="Enter your email" required>
+                    <div class="form-error" id="signup-email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="signup-password">Password</label>
+                    <input type="password" class="form-input" id="signup-password" placeholder="Create a password" required>
+                    <div class="form-error" id="signup-password-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" class="form-input" id="signup-confirm-password" placeholder="Confirm your password" required>
+                    <div class="form-error" id="signup-confirm-password-error"></div>
+                </div>
+                
+                <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>Already have an account?</p>
+                <button type="button" class="auth-switch" id="switch-to-login">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+</body>
+</html>
